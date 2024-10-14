@@ -37,3 +37,11 @@ function motorbike(brand, model, maxSpeed, sidecar){
 
     this.sidecar = sidecar;
 }
+
+motorbike.prototype.showSidecar = () => {
+    if(this.sidecar){
+        console.log("The motorbike has a sidecar.");
+    } else{
+        console.log("The bike doesn't have a sidecar.");
+    }
+}
