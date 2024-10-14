@@ -65,3 +65,8 @@ car1.showInfo();
 car2.showInfo();
 motorbike1.showInfo();
 motorbike2.showInfo();
+
+car1.accelerate(300);
+car2.accelerate(350);
+motorbike1.accelerate(100);
+motorbike2.accelerate(300);
