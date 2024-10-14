@@ -4,7 +4,7 @@ function vehicle (brand, model, maxSpeed){
     this.maxSpeed = maxSpeed;
 }
 
-vehicle.prototype.accelerate = (speed) => {
+vehicle.prototype.accelerate = function(speed) {
     if(this.maxSpeed > speed){
         console.log(`The speed is ${speed}km/h.`)
     } else {
@@ -12,17 +12,17 @@ vehicle.prototype.accelerate = (speed) => {
     }
 }
 
-vehicle.prototype.stop = () => {
+vehicle.prototype.stop = function() {
     console.log(`The vehicle has stopped`);
 }
 
-vehicle.prototype.showInfo = () => {
+vehicle.prototype.showInfo = function() {
     console.log(`Brand = ${this.brand}`);
     console.log(`Model = ${this.model}`);
     console.log(`MaxSpeed = ${this.maxSpeed}`);
 }
 
-vehicle.prototype.compareSpeed = (otherVehicle) => {
+vehicle.prototype.compareSpeed = function(otherVehicle) {
     if (this.maxSpeed > otherVehicle.maxSpeed) {
       console.log(`The ${this.brand} model ${this.model} is faster than the ${otherVehicle.brand} model ${otherVehicle.model}.`);
     } else if (this.maxSpeed < otherVehicle.maxSpeed) {
@@ -38,7 +38,7 @@ function car(brand, model, maxSpeed, doors){
     this.doors = doors;
 }
 
-car.prototype.openDoors = () => {
+car.prototype.openDoors = function() {
     console.log(`The ${this.doors} doors of the ${this.brand} car opened.`);
 }
 
@@ -48,7 +48,7 @@ function motorbike(brand, model, maxSpeed, sidecar){
     this.sidecar = sidecar;
 }
 
-motorbike.prototype.showSidecar = () => {
+motorbike.prototype.showSidecar = function() {
     if(this.sidecar){
         console.log("The motorbike has a sidecar.");
     } else{
