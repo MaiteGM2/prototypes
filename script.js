@@ -31,3 +31,9 @@ function car(brand, model, maxSpeed, doors){
 car.prototype.openDoors = () => {
     console.log(`The ${this.doors} doors of the ${this.brand} car opened.`);
 }
+
+function motorbike(brand, model, maxSpeed, sidecar){
+    vehicle.call(this, brand, model, maxSpeed);
+
+    this.sidecar = sidecar;
+}
