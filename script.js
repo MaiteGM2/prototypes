@@ -11,3 +11,7 @@ vehicle.prototype.accelerate = (speed) => {
         console.log("The speed limit was reached.");
     }
 }
+
+vehicle.prototype.stop = () => {
+    console.log(`The vehicle has stopped`);
+}
