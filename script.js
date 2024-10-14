@@ -38,6 +38,8 @@ function car(brand, model, maxSpeed, doors){
     this.doors = doors;
 }
 
+Object.setPrototypeOf(car.prototype, vehicle.prototype);
+
 car.prototype.openDoors = function() {
     console.log(`The ${this.doors} doors of the ${this.brand} car opened.`);
 }
