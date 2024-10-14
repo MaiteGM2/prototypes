@@ -76,3 +76,5 @@ car2.stop();
 motorbike1.stop();
 motorbike2.stop();
 
+car1.compareSpeed(car2);
+motorbike1.compareSpeed(motorbike2);
