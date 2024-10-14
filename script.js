@@ -50,6 +50,8 @@ function motorbike(brand, model, maxSpeed, sidecar){
     this.sidecar = sidecar;
 }
 
+Object.setPrototypeOf(motorbike.prototype, vehicle.prototype);
+
 motorbike.prototype.showSidecar = function() {
     if(this.sidecar){
         console.log("The motorbike has a sidecar.");
