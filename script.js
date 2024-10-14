@@ -22,6 +22,16 @@ vehicle.prototype.showInfo = () => {
     console.log(`MaxSpeed = ${this.maxSpeed}`);
 }
 
+vehicle.prototype.compareSpeed = (otherVehicle) => {
+    if (this.maxSpeed > otherVehicle.maxSpeed) {
+      console.log(`The ${this.brand} model ${this.model} is faster than the ${otherVehicle.brand} model ${otherVehicle.model}.`);
+    } else if (this.maxSpeed < otherVehicle.maxSpeed) {
+      console.log(`The ${otherVehicle.brand} model ${otherVehicle.model} is faster than the ${this.brand} model ${this.model}.`);
+    } else {
+      console.log(`The ${this.brand} model ${this.model} and the ${otherVehicle.brand} model ${otherVehicle.model} have the same top speed.`);
+    }
+  };
+
 function car(brand, model, maxSpeed, doors){
     vehicle.call(this, brand, model, maxSpeed);
 
