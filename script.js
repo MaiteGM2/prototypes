@@ -70,3 +70,9 @@ car1.accelerate(300);
 car2.accelerate(350);
 motorbike1.accelerate(100);
 motorbike2.accelerate(300);
+
+car1.stop();
+car2.stop();
+motorbike1.stop();
+motorbike2.stop();
+
