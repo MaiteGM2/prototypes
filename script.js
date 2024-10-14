@@ -15,3 +15,9 @@ vehicle.prototype.accelerate = (speed) => {
 vehicle.prototype.stop = () => {
     console.log(`The vehicle has stopped`);
 }
+
+vehicle.prototype.showInfo = () => {
+    console.log(`Brand = ${this.brand}`);
+    console.log(`Model = ${this.model}`);
+    console.log(`MaxSpeed = ${this.maxSpeed}`);
+}
