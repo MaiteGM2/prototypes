@@ -21,3 +21,9 @@ vehicle.prototype.showInfo = () => {
     console.log(`Model = ${this.model}`);
     console.log(`MaxSpeed = ${this.maxSpeed}`);
 }
+
+function car(brand, model, maxSpeed, doors){
+    vehicle.call(this, brand, model, maxSpeed);
+
+    this.doors = doors;
+}
