@@ -60,3 +60,8 @@ const car1 = new car("Mclaren", "750S", 332, 2);
 const car2 = new car("Ferrari", "F40", 324, 2);
 const motorbike1 = new motorbike("Harley-Davidson", "Tri Glide Ultra", 180, true);
 const motorbike2 = new motorbike("Ducati", "Panigale V4", 300, false);
+
+car1.showInfo();
+car2.showInfo();
+motorbike1.showInfo();
+motorbike2.showInfo();
